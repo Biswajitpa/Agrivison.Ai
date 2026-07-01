@@ -314,6 +314,30 @@ This project is licensed under the **MIT License** — see the [LICENSE](LICENSE
 
 ---
 
+## ❓ FAQ
+
+<details>
+<summary><strong>Do I need trained ML models to run this?</strong></summary>
+<br>No. Agrivion AI runs fully on deterministic mock logic if the disease/crop models aren't present, so you can explore every page immediately.
+</details>
+
+<details>
+<summary><strong>Is a Groq or OpenWeather API key mandatory?</strong></summary>
+<br>No. Both are optional. Without them, AgriBot uses a rule-based responder and the weather module uses realistic mock data.
+</details>
+
+<details>
+<summary><strong>Can I deploy this to Streamlit Community Cloud?</strong></summary>
+<br>Yes — push the repo to GitHub, connect it on <a href="https://streamlit.io/cloud">share.streamlit.io</a>, set your <code>.env</code> values as Secrets, and deploy.
+</details>
+
+<details>
+<summary><strong>Can I use my own disease/crop dataset?</strong></summary>
+<br>Yes — retrain your model, drop the new <code>.h5</code>/<code>.pkl</code> file into <code>models/</code> (or upload via Settings → AI Models), and update the label/scaler files accordingly.
+</details>
+
+---
+
 ## 🙏 Acknowledgements
 
 - [Streamlit](https://streamlit.io/) for the rapid app framework
@@ -324,4 +348,28 @@ This project is licensed under the **MIT License** — see the [LICENSE](LICENSE
 
 ---
 
+## 👥 Contributors
+
+<p align="center">
+  <a href="https://github.com/<your-username>/agrivion-ai/graphs/contributors">
+    <img src="https://contrib.rocks/image?repo=<your-username>/agrivion-ai" alt="Contributors">
+  </a>
+</p>
+
+## ⭐ Star History
+
+<p align="center">
+  <img src="https://api.star-history.com/svg?repos=<your-username>/agrivion-ai&type=Date" alt="Star History Chart">
+</p>
+
+---
+
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:22c55e,100:006e2f&height=120&section=footer" alt="Footer Wave">
+</p>
+
 <p align="center">🌱 <strong>Agrivion AI</strong> — Smart Agriculture Platform &nbsp;·&nbsp; Built with ❤️ for farmers</p>
+
+<p align="center">
+  Created & maintained by <strong>Biswajit Pattanaik</strong>
+</p>
