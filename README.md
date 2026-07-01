@@ -4,7 +4,9 @@
 
 <p align="center">
   <img src="https://readme-typing-svg.demolab.com?font=Inter&size=18&duration=3000&pause=1000&color=22C55E&center=true&vCenter=true&width=700&lines=Crop+Disease+Detection+with+AI+%F0%9F%94%AC;Smart+Irrigation+%26+IoT+Monitoring+%F0%9F%92%A7;Yield+Prediction+%26+Crop+Recommendation+%F0%9F%8C%BE;Multilingual+AI+Farming+Assistant+%F0%9F%A4%96" alt="Typing SVG" />
-</p> — built with Streamlit, Plotly, and LLM-driven advisory intelligence.
+</p> 
+
+
 
 Agrivion AI is a single-file, production-styled Streamlit dashboard that brings together crop disease detection, smart irrigation control, weather analytics, yield prediction, IoT sensor monitoring, and a multilingual AI farming assistant into one unified interface.
 
