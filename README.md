@@ -348,20 +348,6 @@ This project is licensed under the **MIT License** — see the [LICENSE](LICENSE
 
 ---
 
-## 👥 Contributors
-
-<p align="center">
-  <a href="https://github.com/<your-username>/agrivion-ai/graphs/contributors">
-    <img src="https://contrib.rocks/image?repo=<your-username>/agrivion-ai" alt="Contributors">
-  </a>
-</p>
-
-## ⭐ Star History
-
-<p align="center">
-  <img src="https://api.star-history.com/svg?repos=<your-username>/agrivion-ai&type=Date" alt="Star History Chart">
-</p>
-
 ---
 
 <p align="center">
