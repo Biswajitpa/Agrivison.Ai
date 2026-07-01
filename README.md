@@ -348,7 +348,6 @@ This project is licensed under the **MIT License** — see the [LICENSE](LICENSE
 
 ---
 
----
 
 <p align="center">
   <img src="https://capsule-render.vercel.app/api?type=waving&color=0:22c55e,100:006e2f&height=120&section=footer" alt="Footer Wave">
