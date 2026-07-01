@@ -4,16 +4,30 @@
 
 <p align="center">
   <img src="https://readme-typing-svg.demolab.com?font=Inter&size=18&duration=3000&pause=1000&color=22C55E&center=true&vCenter=true&width=700&lines=Crop+Disease+Detection+with+AI+%F0%9F%94%AC;Smart+Irrigation+%26+IoT+Monitoring+%F0%9F%92%A7;Yield+Prediction+%26+Crop+Recommendation+%F0%9F%8C%BE;Multilingual+AI+Farming+Assistant+%F0%9F%A4%96" alt="Typing SVG" />
-</p> 
+</p>
 
+<p align="center">
+Agrivion AI is an all-in-one Streamlit dashboard that helps farmers detect crop diseases, optimize irrigation, predict yields, monitor IoT sensors, and get multilingual AI-powered farming advice — all from a single, intuitive interface.
+</p>
 
+<p align="center">
+  <img src="https://img.shields.io/badge/python-3.9%2B-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python">
+  <img src="https://img.shields.io/badge/streamlit-1.3x-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white" alt="Streamlit">
+  <img src="https://img.shields.io/badge/plotly-charts-3F4F75?style=for-the-badge&logo=plotly&logoColor=white" alt="Plotly">
+  <img src="https://img.shields.io/badge/license-MIT-22c55e?style=for-the-badge" alt="License">
+  <img src="https://img.shields.io/badge/status-active-brightgreen?style=for-the-badge" alt="Status">
+</p>
 
-Agrivion AI is a single-file, production-styled Streamlit dashboard that brings together crop disease detection, smart irrigation control, weather analytics, yield prediction, IoT sensor monitoring, and a multilingual AI farming assistant into one unified interface.
+<p align="center">
+  <img src="https://img.shields.io/github/stars/<your-username>/agrivion-ai?style=social" alt="Stars">
+  <img src="https://img.shields.io/github/forks/<your-username>/agrivion-ai?style=social" alt="Forks">
+  <img src="https://img.shields.io/github/issues/<your-username>/agrivion-ai?color=orange" alt="Issues">
+  <img src="https://img.shields.io/github/last-commit/<your-username>/agrivion-ai?color=blue" alt="Last Commit">
+</p>
 
-![Python](https://img.shields.io/badge/python-3.9%2B-blue)
-![Streamlit](https://img.shields.io/badge/streamlit-1.3x-red)
-![License](https://img.shields.io/badge/license-MIT-green)
-![Status](https://img.shields.io/badge/status-active-brightgreen)
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=python,tensorflow,sklearn,git,github,vscode" alt="Skill Icons">
+</p>
 
 ---
 
@@ -89,6 +103,31 @@ The app is built entirely in Streamlit with a custom design system (CSS tokens, 
 | LLM Chat | [Groq API](https://groq.com/) (Llama 3 8B) |
 | Weather Data | [OpenWeatherMap API](https://openweathermap.org/api) |
 | Styling | Custom CSS design system (Inter font, CSS variables, gradients, animations) |
+
+---
+
+## 🏗️ Architecture
+
+```mermaid
+flowchart LR
+    U["👨‍🌾 Farmer / User"] --> UI["Streamlit UI Layer\n(Pages, Widgets, Charts)"]
+    UI --> CACHE["Cache Layer\nst.cache_resource"]
+    CACHE --> DM["Disease Model\n(.h5 CNN)"]
+    CACHE --> CM["Crop Model\n(.pkl + scaler)"]
+    UI --> LLM["Groq LLM API\n(Llama 3 - AgriBot)"]
+    UI --> WX["OpenWeather API"]
+    UI --> RPT["Report Engine\n(fpdf2 / CSV)"]
+    DM -.fallback.-> MOCK1["Mock Disease Predictor"]
+    CM -.fallback.-> MOCK2["Rule-based Crop Logic"]
+    WX -.fallback.-> MOCK3["Mock Weather Data"]
+    LLM -.fallback.-> MOCK4["Rule-based Chat Fallback"]
+
+    style U fill:#0a2414,color:#fff,stroke:#22c55e
+    style UI fill:#006e2f,color:#fff,stroke:#22c55e
+    style CACHE fill:#f2f4f6,color:#191c1e,stroke:#bccbb9
+```
+
+Every external dependency (models, LLM, weather API) is wrapped with a **graceful fallback**, so the platform never breaks — it degrades to realistic mock intelligence instead.
 
 ---
 
